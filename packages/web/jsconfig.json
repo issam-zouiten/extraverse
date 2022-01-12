@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "jsxImportSource": "theme-ui"
+  }
+}
