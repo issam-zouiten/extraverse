@@ -82,14 +82,18 @@ const FAQ = () => {
     <Box as="section">
       <Container>
         <BlockTitle
-          title="Frequently Ask Question"
-          styles={styles.blockTitle}
+          // title="Frequently Ask Question"
+          text="Ask your question and meet"
         />
         <Flex sx={styles.flex}>
+          <Box sx={styles.content}>
+            <Heading as="h3">
+              Frequently Ask Question
+            </Heading>
+          </Box>
           <Box sx={styles.faqWrapper}>
             <Accordion items={accordionData} />
           </Box>
-          
         </Flex>
       </Container>
     </Box>
@@ -101,9 +105,36 @@ export default FAQ;
 const styles = {
   flex: {
     flexWrap: 'wrap',
+    flexDirection: ['column', null, null, null, null, 'row'],
     pb: ['70px', null, null, null, '90px', null, '130px'],
   },
-  blockTitle: {
-    textAlign: 'center',
-  }
+  content: {
+    flex: ['0 0 100%', null, null, null, '0 0 33.333%'],
+    maxWidth: ['100%', null, null, '450px', '100%'],
+    mx: ['auto', null, null, null, '0'],
+    mb: ['0px', null, null, null, '0'],
+    textAlign: ['center', null, null, null, null, 'left'],
+    mt: ['40px', null, null, null, null, '0'],
+    h3: {
+      fontSize: ['43px', null, null, null, '60px'],
+      lineHeight: [0.5, null, null, null, 1.0],
+      color: 'black',
+      fontWeight: 700,
+      letterSpacing: '-1.5px',
+      mt: '80px',
+      pr: ['0', null, null, null, null, '30px'],
+    },
+    p: {
+      fontSize: '16px',
+      lineHeight: 1.87,
+      color: '#343D48',
+      opacity: 0.7,
+      mt: '10px',
+      pr: ['0', null, null, null, null, '80px'],
+    },
+  },
+
+  faqWrapper: {
+    flex: ['0 0 100%', null, null, null, '0 0 66.666%'],
+  },
 };
