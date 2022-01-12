@@ -1,12 +1,6 @@
 import React from 'react';
 import { Box, Container, Grid, Button, Input, Heading, Text } from 'theme-ui';
-
 import Image from 'components/image';
-
-import img1 from 'assets/partner-1-1.png';
-import img2 from 'assets/partner-1-2.png';
-import img3 from 'assets/partner-1-3.png';
-
 import bannerImg from 'assets/banner-image-1-1.png';
 
 const Banner = () => {
@@ -35,18 +29,6 @@ const Banner = () => {
               <Button type="submit" sx={styles.form.button}>
                 Subscribe
               </Button>
-            </Box>
-            <Box sx={styles.partner}>
-              <Text as="span">Sponsored by:</Text>
-              <Box as="div">
-                <Image src={img1} alt="" />
-              </Box>
-              <Box as="div">
-                <Image src={img2} alt="" />
-              </Box>
-              <Box as="div">
-                <Image src={img3} alt="" />
-              </Box>
             </Box>
           </Box>
           <Box sx={styles.image}>

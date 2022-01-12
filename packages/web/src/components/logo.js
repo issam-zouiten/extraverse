@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Image } from 'theme-ui';
+import { jsx, Image, Box, Heading } from 'theme-ui';
 import { Link } from 'components/link';
 import logo from 'assets/logo.svg';
 
@@ -11,7 +11,11 @@ export default function Logo() {
         variant: 'links.logo',
       }}
     >
-      <Image src={logo} sx={{ display: 'flex' }} alt="startup landing logo" />
+      <Box sx={{ display: 'flex' }}>
+        <Heading as="h1">
+        MetaNord
+      </Heading></Box>
+      {/* <Image src={logo} sx={{ display: 'flex' }} alt="MetaNord logo" /> */}
     </Link>
   );
 }

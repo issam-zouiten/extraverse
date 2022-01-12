@@ -11,23 +11,27 @@ import Testimonials from 'sections/testimonials';
 import CustomerSupport from 'sections/customer-support';
 import Feature from 'sections/feature';
 import VideoOne from 'sections/video-one';
-import CallToAction from 'sections/call-to-action';
+import Pricing from 'sections/pricing';
+// import CallToAction from 'sections/call-to-action';
 import BoostAgencies from 'sections/boost-agencies';
+import FAQ from 'sections/faq';
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="zinfinity" />
+          <SEO title="MetaNord" />
           <Banner />
           <Services />
           <BoostAgencies />
           <VideoOne />
           <Testimonials />
           <CustomerSupport />
-          <Feature />
-          <CallToAction />
+          {/* <Feature /> */}
+          <Pricing />
+          {/* <CallToAction /> */}
+          <FAQ />
         </Layout>
       </StickyProvider>
     </ThemeProvider>
