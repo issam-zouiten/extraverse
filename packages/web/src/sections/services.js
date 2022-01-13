@@ -3,27 +3,33 @@ import { Box, Container, Grid, Heading, Text } from 'theme-ui';
 import BlockTitle from 'components/block-title';
 import Image from 'components/image';
 
-import icon1 from 'assets/icons/creative.svg';
-import icon2 from 'assets/icons/modern.svg';
-import icon3 from 'assets/icons/minimal.svg';
-import icon4 from 'assets/icons/service-1-4.svg';
+import icon1 from 'assets/icons/Faster.svg';
+import icon2 from 'assets/icons/minimal.svg';
+import icon3 from 'assets/icons/modern.svg';
+import icon4 from 'assets/icons/secure.svg';
 
 const SERVICES_DATA = [
   {
-    icon: icon3,
+    icon: icon2,
     title: 'Minimal',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
   {
-    icon: icon2,
+    icon: icon3,
     title: 'Modern',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
   {
     icon: icon1,
-    title: 'Creative',
+    title: 'Faster',
+    text:
+      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+  },
+  {
+    icon: icon4,
+    title: 'Secure',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
@@ -77,7 +83,7 @@ const styles = {
       null,
       '1fr 1fr',
       null,
-      '1fr 1fr 1fr',
+      '1fr 1fr 1fr 1fr',
     ],
   },
   icon: {

@@ -55,10 +55,10 @@ const styles = {
   },
   col: {
     img: {
-      maxWidth: ['100%', null, null, '60%', '100%', 'none'],
+      maxWidth: ['100%', null, null, '60%', '100%', '100%'],
       mx: [null, null, null, 'auto', '0'],
       display: [null, null, null, 'block'],
-      mt: [null, null, null, null, '40px', '0'],
+      mt: [null, null, null, null, '40px', '200px'],
     },
   },
   content: {
